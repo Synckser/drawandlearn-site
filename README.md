@@ -13,6 +13,12 @@ Preview: `python3 -m http.server 8765` then open http://localhost:8765/.
 - App Store tracked link: `ct=website` (home), `web_features`, `web_bob`, `web_parents`, `web_support`, `web_press`, `footer`. Results in App Store Connect → Analytics → Acquisition → Campaigns.
 - Emails: hello@ / support@ / press@ drawandlearn.app → Cloudflare Email Routing → piresbobrob@gmail.com.
 
+## Status (2026-10-02)
+- drawandlearn.app LIVE on GitHub Pages, HTTPS enforced. www → apex.
+- drawandlearn.co.uk (+www) proxied A 192.0.2.1 + Redirect Rule 'co.uk to drawandlearn.app' 301 → https://drawandlearn.app{path}.
+- Email Routing on drawandlearn.app: catch-all → piresbobrob@gmail.com (verified). So hello@/support@/press@ all land in Gmail.
+- Videos: assets/video/*.mp4 (h264, ≤2 MB each) made from DrawAndLearn_Marketing (cpp_previews, tiktok/ads/01_bob_talks_FIXED, tracing_video, video_stock). Re-encode: see git log for ffmpeg flags (crf 26, aac 96k, faststart).
+
 ## DNS (Cloudflare, zone drawandlearn.app)
 | Type | Name | Content | Proxy |
 |---|---|---|---|
