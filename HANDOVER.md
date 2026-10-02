@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-10-03 (session 1). Site repo `main` @ 739431a, all pushed. Nothing uncommitted.
 **To resume in a new Claude session:** `cd ~/Desktop/DrawAndLearn_Site && claude`, then say:
-"Read ~/Desktop/DRAW_AND_LEARN_WEBSITE_HANDOVER.md and carry on."
+"Read ~/Desktop/HANDOVER/DRAW_AND_LEARN_WEBSITE_HANDOVER.md and carry on."
 
 ## What exists (all LIVE)
 - **https://drawandlearn.app** — official site, GitHub Pages, HTTPS enforced. `www` redirects to apex.
