@@ -18,6 +18,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#2F8BFF">
 <link rel="stylesheet" href="/assets/style.css">
+<script defer src="/assets/site.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -31,25 +32,70 @@
 <main id="main">
 
 <section class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div>
   <div class="wrap">
     <div>
       <img class="icon" src="/assets/img/icon-512.png" alt="Draw &amp; Learn app icon: Bob the robot with a pencil and paintbrush" width="112" height="112">
       <h1>Draw, colour and <span>learn to talk</span> with Bob</h1>
       <p class="lead">A free iPhone and iPad app for children aged 5 and under. Trace 500+ friendly pictures, hear every word and letter sound, and build first words while you play.</p>
-      <div class="actions"><a class="btn primary" href="https://apps.apple.com/app/apple-store/id6777554616?pt=955046&ct=website&mt=8&ppid=d7351bd0-9993-4b03-9648-612a49a9a093"><span aria-hidden="true" style="font-size:20px"></span> Download on the App Store</a><a class="btn secondary" href="/features/">See what's inside</a></div>
+      <div class="actions"><a class="btn primary" href="https://apps.apple.com/app/apple-store/id6777554616?pt=955046&ct=website&mt=8&ppid=d7351bd0-9993-4b03-9648-612a49a9a093"><span aria-hidden="true" style="font-size:20px"></span> Download on the App Store</a><a class="btn secondary" href="#watch">▶ Watch Bob in action</a></div>
       <p class="rating">★★★★★ Rated 5.0 on the App Store (UK) · Free · Made for Kids</p>
       <div class="pills"><span class="pill">🚫 No ads</span><span class="pill">🔒 No tracking</span><span class="pill">✈️ Works offline</span><span class="pill">🌍 18 languages</span></div>
     </div>
-    <div class="shots">
-      <img src="/assets/img/iphone_1.png" alt="Draw &amp; Learn: tracing a dolphin while Bob cheers" width="430" height="932">
-      <img src="/assets/img/iphone_2.png" alt="Draw &amp; Learn: colouring a T-Rex and hearing each letter sound" width="430" height="932">
+    <div>
+      <div class="phone hero-phone" data-hero>
+        <video autoplay muted loop playsinline preload="metadata" poster="/assets/video/hero_bob.jpg" aria-label="Draw &amp; Learn app demo: Bob talks while a child colours a dolphin and a dinosaur">
+          <source src="/assets/video/hero_bob.mp4" type="video/mp4">
+        </video>
+        <button class="sound" type="button">🔊 Hear Bob</button>
+      </div>
+      <p class="hero-note">Real app footage. Tap the phone for sound.</p>
+    </div>
+  </div>
+</section>
+
+<section id="watch" class="alt">
+  <div class="wrap">
+    <h2 class="reveal">See it in action</h2>
+    <p class="sub reveal">Three short videos, with sound. Tap any phone to play.</p>
+    <div class="vgrid">
+      <figure class="reveal">
+        <div class="phone player" data-player>
+          <span class="badge">0:29</span>
+          <video playsinline preload="metadata" poster="/assets/video/preview_1.jpg"><source src="/assets/video/preview_1.mp4" type="video/mp4"></video>
+          <button class="play" type="button" aria-label="Play: Draw and colour with Bob"></button>
+        </div>
+        <figcaption>Draw &amp; colour<small>The only screen time I say yes to</small></figcaption>
+      </figure>
+      <figure class="reveal">
+        <div class="phone player" data-player>
+          <span class="badge">0:29</span>
+          <video playsinline preload="metadata" poster="/assets/video/preview_2.jpg"><source src="/assets/video/preview_2.mp4" type="video/mp4"></video>
+          <button class="play" type="button" aria-label="Play: Learn to talk with Bob"></button>
+        </div>
+        <figcaption>Learn to talk<small>Bob says the word, your child repeats it</small></figcaption>
+      </figure>
+      <figure class="reveal">
+        <div class="phone player" data-player>
+          <span class="badge">0:29</span>
+          <video playsinline preload="metadata" poster="/assets/video/preview_3.jpg"><source src="/assets/video/preview_3.mp4" type="video/mp4"></video>
+          <button class="play" type="button" aria-label="Play: For parents"></button>
+        </div>
+        <figcaption>For parents<small>No ads. No data collected. Works offline.</small></figcaption>
+      </figure>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><b>500+</b><span>pictures to trace</span></div>
+      <div class="stat"><b>18</b><span>languages</span></div>
+      <div class="stat"><b>0</b><span>ads, ever</span></div>
+      <div class="stat"><b>5.0★</b><span>App Store rating</span></div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>Everything a little artist needs</h2>
+    <h2 class="reveal">Everything a little artist needs</h2>
     <p class="sub">Simple enough for toddlers, rich enough to grow with them.</p>
     <div class="grid">
       <div class="card tint-blue"><div class="em">✏️</div><h3>500+ pictures to trace</h3><p>Animals, dinosaurs, ocean, space, vehicles, fruit and more, with clear friendly guides at Easy, Medium or Hard.</p></div>
@@ -81,9 +127,34 @@
 </section>
 
 <section>
+  <div class="wrap">
+    <h2 class="reveal">How kids learn to draw</h2>
+    <p class="sub reveal">Trace the sample, colour it in, then try without the guide. Watch a full picture on iPad, with sound.</p>
+    <div class="tablet player reveal" data-player>
+      <span class="badge">0:47 · iPad</span>
+      <video playsinline preload="metadata" poster="/assets/video/tracing_wide.jpg"><source src="/assets/video/tracing_wide.mp4" type="video/mp4"></video>
+      <button class="play" type="button" aria-label="Play: how kids learn to draw an apple"></button>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2 class="reveal">Bob says… 🗣️</h2>
+    <p class="sub reveal">Ten-second clips straight from the app. Can your toddler guess the animal before Bob says it?</p>
+    <div class="shorts">
+      <div class="player reveal" data-player><video playsinline preload="metadata" poster="/assets/video/short_quiz_cow.jpg"><source src="/assets/video/short_quiz_cow.mp4" type="video/mp4"></video><button class="play" type="button" aria-label="Play: guess the animal, cow"></button></div>
+      <div class="player reveal" data-player><video playsinline preload="metadata" poster="/assets/video/short_quiz_dog.jpg"><source src="/assets/video/short_quiz_dog.mp4" type="video/mp4"></video><button class="play" type="button" aria-label="Play: guess the animal, dog"></button></div>
+      <div class="player reveal" data-player><video playsinline preload="metadata" poster="/assets/video/short_bob_fox.jpg"><source src="/assets/video/short_bob_fox.mp4" type="video/mp4"></video><button class="play" type="button" aria-label="Play: Bob says fox"></button></div>
+      <div class="player reveal" data-player><video playsinline preload="metadata" poster="/assets/video/short_bob_pumpkin.jpg"><source src="/assets/video/short_bob_pumpkin.mp4" type="video/mp4"></video><button class="play" type="button" aria-label="Play: Bob says pumpkin"></button></div>
+    </div>
+  </div>
+</section>
+
+<section>
   <div class="wrap split">
-    <img src="/assets/img/icon-512.png" alt="Bob the robot" loading="lazy" width="340" height="340">
-    <div>
+    <img class="reveal" src="/assets/img/icon-512.png" alt="Bob the robot" loading="lazy" width="340" height="340">
+    <div class="reveal">
       <h2>Meet Bob 🤖</h2>
       <p class="sub" style="margin-bottom:16px">Bob is the friendly robot who lives in the app. He cheers on every picture, names what your child draws, and never runs out of patience.</p>
       <ul class="check">
@@ -124,6 +195,7 @@
 </section>
 
 </main>
+<a class="mobile-cta" href="https://apps.apple.com/app/apple-store/id6777554616?pt=955046&ct=mobile_bar&mt=8&ppid=d7351bd0-9993-4b03-9648-612a49a9a093"><span style="display:flex;align-items:center;gap:10px"><img src="/assets/img/favicon.png" alt="">Free on the App Store</span><span>Get it →</span></a>
 <footer class="site">
   <div class="wrap">
     <div class="cols">
