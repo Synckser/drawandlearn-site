@@ -55,13 +55,13 @@ def layout(path, title, desc, body, *, ct="website", og_image="/assets/img/icon-
 <main id="main">
 {body}
 </main>
-<a class="mobile-cta" href="{store('mobile_bar')}"><span style="display:flex;align-items:center;gap:10px"><img src="/assets/img/favicon.png" alt="">Free on the App Store</span><span>Get it →</span></a>
+<a class="mobile-cta" href="{store('mobile_bar')}"><span style="display:flex;align-items:center;gap:10px"><img src="/assets/img/favicon.png" alt="">Free week on the App Store</span><span>Get it →</span></a>
 <footer class="site">
   <div class="wrap">
     <div class="cols">
       <div>
         <h4>Draw &amp; Learn to Talk with Bob</h4>
-        <p style="margin:0 0 8px">A free drawing, colouring and first-words app for children aged 5 and under. No ads, no tracking, works offline.</p>
+        <p style="margin:0 0 8px">A drawing, colouring and first-words app for children aged 5 and under. Free 7-day week, no ads, no tracking, works offline.</p>
         <a href="{store('footer')}">Download on the App Store →</a>
       </div>
       <div><h4>App</h4><a href="/features/">Features</a><a href="/bob/">Meet Bob</a><a href="/parents/">For parents</a><a href="/press/">Press kit</a></div>
@@ -91,9 +91,9 @@ home = f"""
     <div>
       <img class="icon" src="/assets/img/icon-512.png" alt="Draw &amp; Learn app icon: Bob the robot with a pencil and paintbrush" width="112" height="112">
       <h1>Draw, colour and <span>learn to talk</span> with Bob</h1>
-      <p class="lead">A free iPhone and iPad app for children aged 5 and under. Trace 500+ friendly pictures, hear every word and letter sound, and build first words while you play.</p>
+      <p class="lead">An iPhone and iPad app for children aged 5 and under, free for 7 days. Trace 500+ friendly pictures, hear every word and letter sound, and build first words while you play.</p>
       <div class="actions">{STORE_BTN}<a class="btn secondary" href="#watch">▶ Watch Bob in action</a></div>
-      <p class="rating">★★★★★ Rated 5.0 on the App Store (UK) · Free · Made for Kids</p>
+      <p class="rating">★★★★★ Rated 5.0 on the App Store (UK) · Free week · Made for Kids</p>
       <div class="pills"><span class="pill">🚫 No ads</span><span class="pill">🔒 No tracking</span><span class="pill">✈️ Works offline</span><span class="pill">🌍 18 languages</span></div>
     </div>
     <div>
@@ -242,19 +242,19 @@ home = f"""
 
 <section class="cta-band">
   <div class="wrap">
-    <h2>Free on the App Store</h2>
-    <p>Every picture, word and sound included. iPhone and iPad, iOS 16.6 or later.</p>
+    <h2>Free week on the App Store</h2>
+    <p>Try everything free for 7 days, then from £2.49 a month. Every picture, word and sound included. iPhone and iPad, iOS 16.6 or later.</p>
     {STORE_BTN}
   </div>
 </section>
 """
-write("/", layout("/", "Draw & Learn to Talk with Bob – Free drawing & first-words app for kids", "Free iPhone and iPad app for children aged 5 and under. Trace 500+ pictures, hear every word and letter sound with Bob the robot. No ads, no tracking, works offline.", home))
+write("/", layout("/", "Draw & Learn to Talk with Bob – Drawing & first-words app for kids", "iPhone and iPad app for children aged 5 and under, free for 7 days. Trace 500+ pictures, hear every word and letter sound with Bob the robot. No ads, no tracking, works offline.", home))
 
 # ---------------- FEATURES ----------------
 features = f"""
 <section class="page"><div class="wrap">
   <h1>Features</h1>
-  <p class="meta">Everything in the app, free, with nothing locked away.</p>
+  <p class="meta">Everything in the app in one plan, with nothing sold separately. Free for 7 days first.</p>
   <div class="grid">
     <div class="card tint-blue"><div class="em">✏️</div><h3>500+ guided pictures</h3><p>Farm, wild animals, pets, Arctic, ocean, birds, bugs, reptiles, dinosaurs, vehicles, space, fruit, shapes, letters and numbers.</p></div>
     <div class="card tint-green"><div class="em">🎚️</div><h3>Easy · Medium · Hard</h3><p>Guides get lighter as skills grow. Start with thick outlines, finish with free drawing.</p></div>
@@ -272,7 +272,7 @@ features = f"""
   <p style="margin-top:32px">{STORE_BTN}</p>
 </div></section>
 """
-write("/features/", layout("/features/", "Features – Draw & Learn to Talk with Bob", "500+ guided pictures, phonics letter sounds, 18 languages, bucket fill, blank canvas, parental gate, fully offline. All free.", features, ct="web_features"))
+write("/features/", layout("/features/", "Features – Draw & Learn to Talk with Bob", "500+ guided pictures, phonics letter sounds, 18 languages, bucket fill, blank canvas, parental gate, fully offline. Free 7-day week.", features, ct="web_features"))
 
 # ---------------- BOB ----------------
 bob = f"""
@@ -309,7 +309,7 @@ parents = f"""
   <h1>For parents</h1>
   <p class="meta">The honest version: what the app does, what it doesn't, and how it protects your child.</p>
   <div class="prose">
-    <p class="summary"><strong>Short version:</strong> Draw &amp; Learn is free, has no ads, collects no data, needs no account and works offline. It is listed in the App Store's Made for Kids section for ages 5 and under.</p>
+    <p class="summary"><strong>Short version:</strong> Draw &amp; Learn has a free 7-day week, then one simple plan from £2.49 a month; families who downloaded it before version 1.3 keep everything free. It has no ads, collects no data, needs no account and works offline. It is listed in the App Store's Made for Kids section for ages 5 and under.</p>
     <h2>Who it's for</h2>
     <p>Children from roughly 18 months to 5 years. Toddlers start with Easy guides and bucket fill; older children move to Medium and Hard outlines, then free drawing on a blank canvas. Many parents use it alongside first words and phonics practice.</p>
     <h2>Privacy, in plain words</h2>
@@ -333,14 +333,14 @@ parents = f"""
     </ul>
     <p>Draw &amp; Learn is a learning aid, not a therapy or a replacement for professional advice.</p>
     <h2>Price</h2>
-    <p>The app is free and every category is unlocked. There are no subscriptions and no in-app purchases in the current version.</p>
+    <p>If you first downloaded the app before version 1.3 (October 2026), every category stays free for you, also after updates. New families get a free 7-day week, started by a grown-up behind the parental gate. When the free week ends, the Monthly plan (£2.49 a month) renews automatically unless you cancel at least 24 hours before it ends; you can choose Yearly (£19.99 a year, auto-renews) or a one-off Lifetime purchase (£39.99) instead. Cancel any time in Settings → your name → Subscriptions, and use Restore Purchases on the paywall to bring a plan back on a new device. Prices may change in the future; Apple tells you first. Full details are in the <a href="/terms/">Terms of Use</a>.</p>
     <h2>Devices</h2>
     <p>iPhone and iPad running iOS or iPadOS 16.6 or later. The app is about 200 MB because all the audio and pictures are included for offline use.</p>
     <p style="margin-top:22px">{STORE_BTN}</p>
   </div>
 </div></section>
 """
-write("/parents/", layout("/parents/", "For parents – Draw & Learn", "Free, no ads, no data collected, no account, works offline. Made for Kids, ages 5 and under. What Draw & Learn does and how it protects your child.", parents, ct="web_parents"))
+write("/parents/", layout("/parents/", "For parents – Draw & Learn", "Free 7-day week, then from £2.49 a month. No ads, no data collected, no account, works offline. Made for Kids, ages 5 and under. What Draw & Learn does and how it protects your child.", parents, ct="web_parents"))
 
 # ---------------- SUPPORT ----------------
 support = f"""
@@ -349,7 +349,7 @@ support = f"""
   <p class="meta">Need help? Email <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a>. We aim to reply within 48 hours.</p>
   <div class="prose faq">
     <h2>Frequently asked questions</h2>
-    <details open><summary>Is the app free?</summary><p>Yes. All drawing categories and learning activities are available without a subscription or in-app purchase.</p></details>
+    <details open><summary>Is the app free?</summary><p>If you downloaded it before version 1.3 (October 2026): yes, everything stays free for you, including after updates. New families get a free 7-day week, then choose Monthly (£2.49), Yearly (£19.99) or a one-off Lifetime purchase (£39.99). A grown-up starts the free week behind the parental gate, and you can cancel any time in Settings → your name → Subscriptions.</p></details>
     <details><summary>Is my child's data safe?</summary><p>Draw &amp; Learn does not collect personal data, show advertising or track children. Drawings remain on the device unless you choose to export them. See our <a href="/privacy/">Privacy Policy</a>.</p></details>
     <details><summary>What ages is it designed for?</summary><p>Children aged 5 and under, with guided drawing, tracing, colouring, first words, phonics, shapes and numbers. Parent settings and links sit behind a parental gate.</p></details>
     <details><summary>Does the app use the internet, microphone or camera?</summary><p>No. Everything children use works fully offline. Bob's voice is either audio bundled with the app or Apple's on-device text-to-speech. The app never asks for microphone or camera access. The only permission it may request is to add a finished drawing to Photos when you choose to save it.</p></details>
@@ -372,12 +372,12 @@ press = f"""
   <p class="meta">Facts, images and boilerplate for writers and creators. Contact <a href="mailto:{PRESS_EMAIL}">{PRESS_EMAIL}</a>.</p>
   <div class="prose">
     <h2>Boilerplate</h2>
-    <p class="summary">Draw &amp; Learn to Talk with Bob is a free iPhone and iPad app that helps children aged 5 and under draw, colour and learn first words. Bob, a friendly robot, names every one of the 500+ pictures, sounds out letters and cheers on every finished drawing, in 18 languages. The app has no ads, no tracking and no account, and works fully offline. It was built in the UK by a dad for his own child.</p>
+    <p class="summary">Draw &amp; Learn to Talk with Bob is an iPhone and iPad app that helps children aged 5 and under draw, colour and learn first words. New families try everything free for 7 days; families who downloaded it before version 1.3 keep it free. Bob, a friendly robot, names every one of the 500+ pictures, sounds out letters and cheers on every finished drawing, in 18 languages. The app has no ads, no tracking and no account, and works fully offline. It was built in the UK by a dad for his own child.</p>
     <h2>Fast facts</h2>
     <table class="facts">
       <tr><th>Name</th><td>Draw &amp; Learn to Talk with Bob</td></tr>
       <tr><th>Platform</th><td>iPhone &amp; iPad, iOS 16.6+</td></tr>
-      <tr><th>Price</th><td>Free, no in-app purchases</td></tr>
+      <tr><th>Price</th><td>Free 7-day week, then from £2.49/month (Monthly £2.49, Yearly £19.99, Lifetime £39.99 one-off). Families who downloaded before v1.3 keep it free.</td></tr>
       <tr><th>Age</th><td>Made for Kids, 5 and under</td></tr>
       <tr><th>Category</th><td>Education</td></tr>
       <tr><th>Content</th><td>500+ pictures, 20+ categories, letters, numbers, shapes, blank canvas</td></tr>
@@ -403,7 +403,7 @@ press = f"""
     <ul>
       <li>A dad built a toddler app with zero data collection, and Apple approved it for the Made for Kids section.</li>
       <li>Why Bob is a robot: toddlers want the same word said fifty times, patiently.</li>
-      <li>An offline-first kids app in a world of subscriptions and ads.</li>
+      <li>An offline-first kids app with no ads and no tracking.</li>
     </ul>
   </div>
 </div></section>
@@ -448,18 +448,18 @@ write("/privacy/", layout("/privacy/", "Privacy Policy – Draw & Learn", "Draw 
 terms = f"""
 <section class="page"><div class="wrap"><div class="prose">
   <h1>Terms of Use</h1>
-  <p class="meta">Effective: 28 September 2026</p>
-  <p class="summary"><strong>Summary:</strong> Draw &amp; Learn (listed on the App Store as "Draw &amp; Learn to Talk with Bob") is a free educational app made for children aged 5 and under. It has no subscription or in-app purchase in this release. A parent or legal guardian should review these terms for a child.</p>
+  <p class="meta">Effective: 15 October 2026</p>
+  <p class="summary"><strong>Summary:</strong> Draw &amp; Learn (listed on the App Store as "Draw &amp; Learn to Talk with Bob") is an educational app made for children aged 5 and under. Families who first downloaded it before version 1.3 keep it free; new families get a free 7-day week, then a Monthly or Yearly subscription or a one-off Lifetime purchase. A parent or legal guardian should review these terms for a child.</p>
   <h2>1. Agreement</h2><p>By downloading or using Draw &amp; Learn, you agree to these Terms and Apple's applicable App Store and Apple Media Services terms. If you permit a child to use the app, you accept these Terms on the child's behalf and remain responsible for supervising use.</p>
   <h2>2. Educational purpose</h2><p>The app provides creative drawing, tracing, vocabulary, phonics, shape, and number activities. It is a learning aid and does not replace professional educational, medical, developmental, or therapeutic advice.</p>
-  <h2>3. Free access</h2><p>The current version of the app provides all included categories and activities free of charge. No subscription, trial, advertising, or in-app purchase is required. Apple may apply its own connectivity or device-service terms.</p>
+  <h2>3. Free week, subscriptions and the Lifetime purchase</h2><p><strong>Early families.</strong> If you first downloaded the app before version 1.3, every category and activity stays free of charge for you, including after updates and reinstalls, with no subscription, trial, advertising or in-app purchase.</p><p><strong>New families.</strong> If you first download the app with version 1.3 or later, the app starts with a free week: 7 days of full access that begins when a grown-up starts it on the paywall. When the free week ends, the <strong>Monthly subscription (£2.49 per month)</strong> renews automatically unless you cancel at least 24 hours before the free week ends. Instead of Monthly you can choose the <strong>Yearly subscription (£19.99 per year)</strong>, which also renews automatically, or the <strong>one-off Lifetime purchase (£39.99)</strong>, which never renews. Prices are shown in your local currency in the app and on the App Store and may differ by country. The free week is offered once per Apple Account.</p><p><strong>Billing and cancelling.</strong> Payment is charged to your Apple Account when you confirm the purchase. Subscriptions renew automatically for the same length and at the same price unless you turn off auto-renew at least 24 hours before the current period ends, in Settings → your name → Subscriptions on your device. Cancelling stops future charges; the current period is not refunded, and deleting the app does not cancel a subscription. Refunds are handled by Apple under the Apple Media Services terms. Use <strong>Restore Purchases</strong> on the paywall to bring your plan back on a new device signed in to the same Apple Account.</p><p><strong>Price changes.</strong> We may change subscription prices in the future. If the price of a subscription you already have goes up, Apple will tell you in advance and, where the law requires it, ask for your consent before the new price applies. You can cancel at any time.</p><p><strong>Parental gate.</strong> The paywall, purchases, Settings and external links sit behind a parental gate and are for adults only. Apple may apply its own connectivity or device-service terms.</p>
   <h2>4. Licence</h2><p>We grant you a limited, personal, non-exclusive, non-transferable, revocable licence to use the app on Apple-branded products you own or control, as permitted by Apple's Usage Rules. You may not copy, resell, reverse engineer except where law permits, interfere with, or use the app unlawfully.</p>
   <h2>5. User-created artwork</h2><p>You retain rights in artwork created with the app. Artwork is stored locally and is not uploaded to us. You are responsible for exported or shared artwork and for ensuring it does not infringe another person's rights.</p>
   <h2>6. Intellectual property</h2><p>The app, bundled learning materials, artwork, audio, design, and software are protected by applicable intellectual-property laws. These Terms do not transfer ownership of those materials.</p>
   <h2>7. Privacy and children</h2><p>Our <a href="/privacy/">Privacy Policy</a> explains the app's data practices. Parent-facing external links are placed behind a parental gate. Parents and guardians remain responsible for device settings, backups, exports, and supervision.</p>
   <h2>8. Availability and updates</h2><p>We may update, improve, suspend, or discontinue features. Some functions depend on a compatible device and operating system. We do not guarantee uninterrupted or error-free operation.</p>
   <h2>9. Disclaimer</h2><p>To the maximum extent permitted by law, the app is provided "as is" and "as available," without warranties beyond those that cannot legally be excluded. Nothing in these Terms limits statutory consumer rights.</p>
-  <h2>10. Liability</h2><p>To the maximum extent permitted by law, we are not liable for indirect, incidental, special, or consequential loss arising from use of the app. Where liability cannot be excluded, it is limited to the greater of the amount paid for the app and the minimum amount required by applicable law. The app is free in this release.</p>
+  <h2>10. Liability</h2><p>To the maximum extent permitted by law, we are not liable for indirect, incidental, special, or consequential loss arising from use of the app. Where liability cannot be excluded, it is limited to the greater of the amount you paid for the app, including any subscription or Lifetime purchase, in the 12 months before the claim and the minimum amount required by applicable law.</p>
   <h2>11. Apple terms</h2><p>These Terms are between you and the developer, not Apple. Apple has no obligation to provide maintenance or support. Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce the Apple-related provisions. Claims relating to the app remain the developer's responsibility to the extent required by law and Apple's standard licensed application terms.</p>
   <h2>12. Governing law</h2><p>These Terms are governed by the laws applicable to the developer, without removing mandatory consumer protections or rights available in your country of residence.</p>
   <h2>13. Changes and contact</h2><p>Changes will be posted here with a new effective date. Questions may be sent to <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a>.</p>
